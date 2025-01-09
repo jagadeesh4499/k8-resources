@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annotations
+  annotations:
+    imageregistry: "https://hub.docker.com/"
+    buildURL: "https://jenkins.joindevops.com/expense/backend/build/67"
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+
+# Difference b/w labels and annotations is we can store anything in the annotations, there is no limit. For example URL's etc.
